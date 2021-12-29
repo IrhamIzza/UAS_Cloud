@@ -1,12 +1,12 @@
 version: '3.8'
 services:
   php-apache-environment:
-    image: irham123/quiz2
+    image: irham123/uas
     container_name: php-apache
     volumes:
       - ./php/src:/var/www/html/
     ports:
-      - 8000:80
+      - 8080:80
     networks:
       - backend
 
